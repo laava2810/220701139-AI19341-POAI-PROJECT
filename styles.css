@@ -1,0 +1,244 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;  /* Ensures content covers the full viewport height */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    background-color: #214b45;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Section */
+.banner {
+    background-color: #73c0b6;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.banner h2 {
+    font-size: 36px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #d35400;
+}
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.service-box h3 {
+    margin-bottom: 15px;
+}
+
+/* Consultation Booking Form */
+.consultation-form {
+    background-color: #e6f4f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.consultation-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Doctors Section */
+.doctors {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.doctor-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.doctor {
+    text-align: center;
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.doctor img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.doctor h3 {
+    margin: 15px 0 5px;
+}
+
+.doctor p {
+    color: #666;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #214b45;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doctor-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h2 {
+        font-size: 28px;
+    }
+
+    .btn-primary {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .service-box {
+        flex-basis: 100%;
+    }
+
+    .doctor {
+        flex-basis: 100%;
+    }
+}
